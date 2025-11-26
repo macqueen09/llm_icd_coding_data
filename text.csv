@@ -1,0 +1,181 @@
+,subject_id,hadm_id,prompt,content
+0,tensor(10000084),tensor(23052089),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+1,tensor(10000117),tensor(22927623),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+2,tensor(10000117),tensor(27988844),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+3,tensor(10000980),tensor(20897796),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+4,tensor(10000980),tensor(25911675),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+5,tensor(10000980),tensor(29659838),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+6,tensor(10001401),tensor(21544441),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+7,tensor(10001401),tensor(24818636),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+8,tensor(10001401),tensor(26840593),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+9,tensor(10001401),tensor(27012892),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+10,tensor(10001401),tensor(27060146),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+11,tensor(10001401),tensor(28058085),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+12,tensor(10001667),tensor(22672901),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+13,tensor(10001884),tensor(24746267),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+14,tensor(10001884),tensor(24962904),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+15,tensor(10001884),tensor(26184834),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+16,tensor(10001884),tensor(26202981),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+17,tensor(10001884),tensor(27507515),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+18,tensor(10001884),tensor(28475784),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+19,tensor(10001884),tensor(28664981),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+20,tensor(10001884),tensor(29678536),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+21,tensor(10001919),tensor(29897682),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+22,tensor(10002013),tensor(21763296),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+23,tensor(10002013),tensor(25442395),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+24,tensor(10002013),tensor(27574273),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+25,tensor(10002131),tensor(24065018),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+26,tensor(10002221),tensor(20195471),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+27,tensor(10002221),tensor(20237862),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+28,tensor(10002221),tensor(21729093),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
+29,tensor(10002221),tensor(29399017),"<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+1+1=?<|im_end|>
+<|im_start|>assistant
+",1+1=2
