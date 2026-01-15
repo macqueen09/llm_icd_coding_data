@@ -6,7 +6,10 @@ This repository contains the implementation for the paper: **"Accurate and Expla
 
 
 ##  Dataset Information
-* **MIMIC-IV (v2.2)**: A large-scale EHR database from Beth Israel Deaconess Medical Center. [DOI: 10.13026/6mm1-ek67](https://doi.org/10.13026/6mm1-ek67).
+* **MIMIC-IV (v2.2)**: A large-scale EHR database from Beth Israel Deaconess Medical Center. 
+**DOI**: [10.13026/6mm1-ek67](https://doi.org/10.13026/6mm1-ek67)
+**Access**: Requires credentialed access via [PhysioNet](https://physionet.org/content/mimiciv/2.2/).
+
 * **ICD-10-CM**: The official clinical modification for diagnosis coding. [Source: CDC](https://www.cdc.gov/nchs/icd/icd-10-cm/index.html).
 * **MedBench**: A comprehensive benchmark for medical LLMs. [Source: OpenCompass](https://medbench.opencompass.org.cn).
 * **Intermediate Training Set (`llm_data_train_cot.csv`)**: Contains 155,541 training samples with CoT reasoning. All PHI has been removed to comply with HIPAA.
