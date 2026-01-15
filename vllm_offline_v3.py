@@ -94,29 +94,29 @@ def icd10():
     return
     
     with open('./doubao_cot_all.csv','w', newline='', encoding='utf-8') as csvfile:
-        # df.columns = ['subject_id', 'hadm_id', 'text', 'label'] # text转成了input（加上了prompt的）
+        # df.columns = ['subject_id', 'hadm_id', 'text', 'label'] # 'text' has been converted to 'input' (with the prompt added)
     
-        # 定义 CSV 文件的列名
+        # Define the column names of the CSV file
         fieldnames = ['subject_id', 'hadm_id', 'label', 'text', 'cot', 'instruction']
-        # input是带有 chat_template 的病历文书信息 
+        # The input is medical record information with a chat_template. 
     
-        # 创建 CSV 写入器
+        # Create a CSV writer
         #writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quotechar='"', escapechar='\\')    
     
-        # 写入列名
+        # Write column names
         writer.writeheader()
     
-        # 遍历 DataLoader 中的每个批次
+        # Iterate over each batch in the DataLoader
         for idx, samples in enumerate(outloader):
             # df.columns = ['subject_id', 'hadm_id', 'text', 'label']
-            # 当前的数据包含的列
+            # Columns included in the current data
             #    df.columns = ['subject_id', 'hadm_id', 'text', 'label'] + prompt
             sids = samples["subject_id"]
             hids = samples["hadm_id"]
-            prompts = samples["input"] # apply_chat_template的结果
-            labels = samples["label"] # icdcode:title\n 的格式
-            texts = samples['text'] # 病历文书
+            prompts = samples["input"] # The result of apply_chat_template
+            labels = samples["label"] # The format of icdcode:title\n
+            texts = samples['text'] # Medical record text
 
             # print(prompts)
             outputs = llm.generate(prompts, sampling_params)
@@ -130,10 +130,10 @@ def icd10():
                     'subject_id': sid,
                     'hadm_id': hid,
                     'label': label,
-                    'instruction':user_input, # 记录
+                    'instruction':user_input, # Record
                     'text':text,
-                    # 'input': output.prompt.replace("\'","\""), # 没必要再生成了
-                    'cot': output.outputs[0].text.replace("\'","\"") # 生成的cot的结果
+                    # 'input': output.prompt.replace("\'","\""), # No need to generate it anymore.
+                    'cot': output.outputs[0].text.replace("\'","\"") # The result of the generated COT
 
                 })
             csvfile.flush()

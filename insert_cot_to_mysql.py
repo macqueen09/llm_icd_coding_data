@@ -10,16 +10,17 @@ db = DBApi()
 
 def new_update_input_and_output():
     '''
-    当前插入数据的代码，最新
+    Latest code for inserting data
 
-    # text是病历原文
-    # cot是qwen给出的解释
-    # output 是 label
+    # text is the original medical record
+    # cot is the explanation provided by qwen
+    # output is the label
     select count(1) from mimic4.llm_train_data_labels where cot is not null ;
-    当前3000条
+    Currently 3000 entries
 
     :return:
-    '''
+'''
+
     df = pd.read_csv("/supercloud/Raysome_171_server/commonutils_moreacc_20250220/llm_mark/online/icd10/online/en_paper_pipeline/CoT_data/llm_data_train_cot_all_1.csv",nrows=None)
     print(df)
 
@@ -45,13 +46,13 @@ def new_update_input_and_output():
 
 def update_table_from_doubao():
     '''
-    当前插入数据的代码，最新
+    Latest code for inserting data
 
-    # text是病历原文
-    # cot是qwen给出的解释
-    # output 是 label
+    # text is the original medical record
+    # cot is the explanation provided by qwen
+    # output is the label
     select count(1) from mimic4.llm_train_data_labels where cot is not null ;
-    当前3000条
+    Currently 3000 entries
 
     :return:
     '''
@@ -63,7 +64,7 @@ def update_table_from_doubao():
     #for i in namelist:
     #    print(i,"\n",df.loc[1,i],'\n\n\n\n\n\n\n')
 
-    # INSTRUCTION有点问题
+    # There are some issues with the INSTRUCTION
     #print(df.loc[1,"cot"])
 
 

@@ -5,7 +5,7 @@ import argparse
 import sys
 
 LLM_MODEL_URL = 'http://127.0.0.1:9997/v1'
-# 模型ID
+# Model ID
 MODEL_ID = 'Your_LLM_ID'
 
 def xinfer_openai_request_llm(to_system,from_human,temperature=0.3, max_tokens=16000):

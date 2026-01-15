@@ -51,13 +51,13 @@ def insert_to_cot_text():
 
         long_title = long_title.replace("\'","\"")
 
-        # 单个项插入到cot_diag_mark
+        # Insert a single item into cot_diag_mark
         inset_sql = '''
             insert into mimic4.cot_diag_mark (subject_id, hadm_id, seq_num, icd10_code, icd10_name, text_unique_id) VALUES ({},{},{},'{}','{}','{}')
         '''.format(subject_id, hadm_id, seq_num, icd_code, long_title, key)
         db.insert(inset_sql)
 
-    # 整个内容插入到cot_text
+    # Insert the entire content into cot_text
     for (key,v) in alldata.items():
         subject_id = v['subject_id']
         hadm_id = v["hadm_id"]
@@ -67,7 +67,7 @@ def insert_to_cot_text():
         # print(icd_code)
         print(len(text))
 
-        # 再考虑下怎么处理数据
+        # Reconsider the data processing strategy
         insert_sql = '''
         insert into mimic4.cot_text (subject_id, hadm_id, text, src_icd_codes, text_unique_id) VALUES ({},{},'{}','{}','{}')
         '''.format(subject_id, hadm_id, text, icd_code, key)
@@ -120,20 +120,20 @@ def get_model_train_data():
         alldata[key]['label_code_title'][icd_code]=long_title
 
         # long_title = long_title.replace("\'","\"")
-        # # 单个项插入到cot_diag_mark
+        # # Insert a single item into cot_diag_mark
         # inset_sql = '''
         #     insert into mimic4.cot_diag_mark (subject_id, hadm_id, seq_num, icd10_code, icd10_name, text_unique_id) VALUES ({},{},{},'{}','{}','{}')
         # '''.format(subject_id, hadm_id, seq_num, icd_code, long_title, key)
         # db.insert(inset_sql)
 
-    # 整个内容插入到cot_text
+    # Insert the entire content into cot_text
     outdata = []
     for (key,v) in alldata.items():
-        text = v["text"] # 病历文书
+        text = v["text"] # Medical record document
         result = [f"{code}:{title}" for code,title in v["label_code_title"].items()]
 
-        system_prompt = '''根据输入的病历文本，和提取到的ICD10编码结果，给出合理的解释，即：为什么当前病人的编码结果是这样的'''
-        user_input = f"这是病历文书：{text}\n\n这是ICD10的编码结果：{result}"
+        system_prompt = '''Based on the input clinical note and the extracted ICD-10 coding results, provide a reasonable explanation, i.e., explain why the current patient's coding results are as shown.'''
+        user_input = f"This is the clinical note:{text}\n\nThese are the ICD-10 coding results: {result}"
         # cot_result = get_doubao(system_prompt, user_input)
         cot_result = ""
 
@@ -147,13 +147,13 @@ def get_model_train_data():
 
         outdata.append(line)
 
-    # 指定输出文件的路径
+    # Specify the output file path
     output_file_path = "llm_train_data.json"
-    # 将列表以 JSON 格式写入文件
+    # Write the list to the file in JSON format
     with open(output_file_path, "w", encoding="utf-8") as file:
-        # 使用 json.dump 将数据写入文件
+        # Use json.dump to write data to the file
         json.dump(outdata, file, ensure_ascii=False, indent=4)
-    print(f"数据已成功写入到文件：{output_file_path}")
+    print(f"Data has been successfully written to the file：{output_file_path}")
 
 
 
@@ -179,7 +179,7 @@ def insert_labels():
         alldata[key]['label_code_title'][icd_code]=long_title
 
 
-    # 整个内容插入到cot_text
+    # Insert the entire content into cot_text
     outdata = []
     for (key,v) in alldata.items():
 
@@ -193,7 +193,7 @@ def insert_labels():
         # line["output"] = line["output"].replace("\'","\"")
         outdata.append(line)
 
-    # 指定输出文件的路径
+    # Specify the path for the output file
     output_file_path = "llm_train_data_labels.csv"
     pd.DataFrame(outdata).to_csv(output_file_path, index=False)
 

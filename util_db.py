@@ -16,7 +16,7 @@ class DBApi():
                 'passwd': '123',
                 'port': 3306,
                 'db':'mimic3',
-                'charset': 'utf8mb4'}  # 数据库配置信息
+                'charset': 'utf8mb4'}  # Database configuration information
 
         self.db = pymysql.connect(**config)
         self.cursor = self.db.cursor()
@@ -24,12 +24,12 @@ class DBApi():
     def query(self,sql,fetch_one=False):
         try:
             self.cursor.execute(sql)
-            # 获取查询结果
+            # Retrieve the query results
             if fetch_one:
                 result = self.cursor.fetchone()
             else:
                 result = self.cursor.fetchall()
-            # 提交更改
+            # Submit changes
             self.db.commit()
         except Exception as e:
             print(f"Error: {e}")
@@ -39,13 +39,13 @@ class DBApi():
 
     def insert(self,sql):
         try:
-            # 执行sql语句
+            # Execute the SQL query
             self.cursor.execute(sql)
-            # 执行sql语句
+            # Execute the SQL query
             self.db.commit()
         except Exception as e:
-            print("发生错误",sql,e)
-            # 发生错误时回滚
+            print("Error",sql,e)
+            # Rollback in case of an 
             self.db.rollback()
             return e
         return "success"
@@ -56,13 +56,13 @@ class DBApi():
         self.db.commit()
 
     def insert_item(self,sql,item):
-        # sql = "insert into test2(url, time) values(%s,%s)"  # 注意此处与前一种形式的不同
+        # sql = "insert into test2(url, time) values(%s,%s)"  # # Note the difference here compared to the previous form
         # par = (Url，Time)
         try:
             self.db.execute(sql, item)
-            self.db.commit()  # 提交到数据库执行，一定要记提交哦
+            self.db.commit()  # # Commit to the database for execution, make sure to commit
         except Exception:
-            self.db.rollback()  # 发生错误时回滚
+            self.db.rollback()  # Rollback in case of an error
 
 
     def close(self):
