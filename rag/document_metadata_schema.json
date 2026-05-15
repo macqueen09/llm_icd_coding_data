@@ -1,0 +1,24 @@
+{
+  "source_document": {
+    "source_id": "stable local identifier",
+    "source_category": "WHO_ICD10 | ICD10_CM_GUIDELINE | CLINICAL_GUIDELINE | TEXTBOOK",
+    "title": "document title",
+    "version_or_year": "version, edition, or publication year when available",
+    "publisher_or_organization": "issuing organization or publisher",
+    "url_or_doi": "public URL or DOI when available",
+    "access_status": "public | credentialed | institutional_license | copyrighted",
+    "redistribution_allowed": true,
+    "license_or_terms": "license, terms of use, or access note",
+    "notes": "free-text provenance notes"
+  },
+  "retrievable_chunk": {
+    "chunk_id": "stable chunk identifier",
+    "source_id": "identifier linking the chunk to source_document",
+    "section_title": "chapter, section, or heading used during chunking",
+    "chunk_order": 0,
+    "embedding_model": "BAAI/bge-large-en-v1.5",
+    "index_backend": "FAISS",
+    "text_available_in_repository": false,
+    "redistribution_note": "Only metadata and configuration are included when the underlying source text cannot be redistributed."
+  }
+}

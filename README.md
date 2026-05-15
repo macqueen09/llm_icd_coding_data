@@ -1,8 +1,8 @@
-# Accurate and Explainable ICD-10 Coding Through Multi-Stage Model Adaptation and Evidence-Guided Verification
+# Accurate and Explainable ICD-10-CM Coding Through Multi-Stage Model Adaptation and Evidence-Guided Verification
 
 
 ## Description
-This repository contains the implementation for the paper: **"Accurate and Explainable ICD-10 Coding Through Multi-Stage Model Adaptation and Evidence-Guided Verification"**. The project focuses on fine-tuning Qwen2.5 models for ICD-10 coding tasks using supervised fine-tuning (SFT) and Chain-of-Thought (CoT) reasoning, with medical domain-specific data.
+This repository contains the implementation for the paper: **"Accurate and Explainable ICD-10-CM Coding Through Multi-Stage Model Adaptation and Evidence-Guided Verification"**. The project focuses on fine-tuning Qwen2.5 models for ICD-10-CM coding tasks using supervised fine-tuning (SFT) and Chain-of-Thought (CoT) reasoning, with medical domain-specific data.
 
 
 ##  Dataset Information
@@ -21,6 +21,8 @@ This repository contains the implementation for the paper: **"Accurate and Expla
 - `insert_cot_to_mysql.py`: Handles high-concurrency data storage for large-scale training.
 - `inference.py`: Implementation of the evidence-guided verification and performance evaluation (Macro-F1, Micro-F1).
 - `run_sft.sh`: Shell script for Supervised Fine-Tuning using DeepSpeed ZeRO-3.
+- `prompts/`: Prompt templates for CoT generation, ICD-10-CM inference, RAG-based verification, and representative prompt augmentation.
+- `rag/`: Retrieval configuration and document metadata schema for the RAG-based verifier. Copyrighted or restricted full-text guideline and textbook sources are not redistributed.
 
 
 
@@ -64,14 +66,15 @@ pip install -r requirements.txt
 ## Methodology
 The framework consists of three key components as detailed in the paper:
 - **Multi-Stage Adaptation**: Step-wise fine-tuning from general medical logic to specific coding tasks.
-- **Chain-of-Thought (CoT) Reasoning**: Synthesizing expert-like reasoning paths to explain the linkage between clinical notes and ICD-10 codes.
+- **Chain-of-Thought (CoT) Reasoning**: Synthesizing expert-like reasoning paths to explain the linkage between clinical notes and ICD-10-CM codes.
 - **Verification Mechanism**: A specialized module that validates the consistency between the predicted code and the extracted evidence from clinical documents.
+- **RAG Reproducibility Boundary**: The repository documents retrieval settings and metadata fields under `rag/`, while users must obtain restricted MIMIC-IV, guideline, or textbook source materials through the appropriate access channels.
 
 
 ## License & Data Use Agreement
 
 ### Code License
-The source code in this repository is licensed under the **MIT License**. This permits free use, modification, and distribution for academic and commercial purposes, provided that the original copyright notice and this permission notice are included. See the [LICENSE](./LICENSE) file for the full text.
+The source code in this repository is licensed under the **MIT License**. This permits free use, modification, and distribution for academic and commercial purposes, provided that the original copyright notice and this permission notice are included. See the [license](./license) file for the full text.
 
 ### Data Use Agreement & Privacy Compliance
 This project involves the use of third-party clinical datasets. Access and use must comply with the following terms:

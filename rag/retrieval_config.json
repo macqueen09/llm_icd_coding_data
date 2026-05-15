@@ -1,0 +1,37 @@
+{
+  "retrieval_module": "evidence_guided_verifier",
+  "task": "admission_level_icd_10_cm_diagnosis_code_verification",
+  "encoder": {
+    "name": "BAAI/bge-large-en-v1.5",
+    "pooling": "default_model_pooling",
+    "normalize_embeddings": true
+  },
+  "index": {
+    "backend": "FAISS",
+    "similarity_metric": "cosine",
+    "index_granularity": "section_or_chapter_chunk"
+  },
+  "chunking": {
+    "strategy": "semantic_chunks_preserving_source_section_boundaries",
+    "metadata_required": [
+      "source_id",
+      "source_category",
+      "title",
+      "section_title",
+      "chunk_id",
+      "access_status",
+      "redistribution_allowed"
+    ]
+  },
+  "query_inputs": [
+    "de_identified_discharge_note",
+    "predicted_icd_10_cm_code",
+    "model_generated_rationale"
+  ],
+  "retrieval": {
+    "top_k": 5,
+    "reranking": "not_used_in_current_manuscript",
+    "evidence_use": "retrieved passages are passed to the verifier prompt for consistency filtering"
+  },
+  "redistribution_note": "This configuration documents the retrieval workflow. It does not include copyrighted or restricted full-text guideline or textbook content."
+}
