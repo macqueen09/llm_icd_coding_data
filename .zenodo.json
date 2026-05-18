@@ -1,0 +1,48 @@
+{
+  "title": "llm_icd_coding_data: Reproducibility Materials for ICD-10-CM Diagnosis Coding",
+  "upload_type": "software",
+  "description": "Source code, prompt templates, retrieval configuration, and reproducibility materials for the manuscript \"Accurate and explainable ICD-10-CM diagnosis coding through multi-stage model adaptation and evidence-guided verification\".",
+  "creators": [
+    {
+      "name": "Qiu, Jianhua"
+    },
+    {
+      "name": "Qin, Zheng"
+    },
+    {
+      "name": "Ma, Kaili"
+    },
+    {
+      "name": "Hu, Pin"
+    },
+    {
+      "name": "Zhang, Yeling"
+    },
+    {
+      "name": "Xie, Xiaotong"
+    },
+    {
+      "name": "Zhao, Wei"
+    },
+    {
+      "name": "Wei, Xin"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "ICD-10-CM",
+    "automated medical coding",
+    "large language models",
+    "MIMIC-IV",
+    "retrieval-augmented generation",
+    "chain-of-thought"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/macqueen09/llm_icd_coding_data",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

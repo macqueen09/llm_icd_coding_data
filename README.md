@@ -4,6 +4,9 @@
 ## Description
 This repository contains the implementation for the paper: **"Accurate and Explainable ICD-10-CM Coding Through Multi-Stage Model Adaptation and Evidence-Guided Verification"**. The project focuses on fine-tuning Qwen2.5 models for ICD-10-CM coding tasks using supervised fine-tuning (SFT) and Chain-of-Thought (CoT) reasoning, with medical domain-specific data.
 
+## Archival DOI
+PeerJ requires a DOI for author-created code repositories. This repository includes `.zenodo.json` and `CITATION.cff` metadata for Zenodo archiving. After creating a GitHub release and minting the Zenodo DOI, cite the Zenodo DOI in the PeerJ submission system and add it to this section.
+
 
 ##  Dataset Information
 * **MIMIC-IV (v2.2)**: A large-scale EHR database from Beth Israel Deaconess Medical Center. 

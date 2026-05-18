@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this code or reproducibility material, please cite the associated PeerJ Computer Science article and the archived software DOI."
+title: "llm_icd_coding_data: Reproducibility Materials for ICD-10-CM Diagnosis Coding"
+type: software
+authors:
+  - family-names: Qiu
+    given-names: Jianhua
+  - family-names: Qin
+    given-names: Zheng
+  - family-names: Ma
+    given-names: Kaili
+  - family-names: Hu
+    given-names: Pin
+  - family-names: Zhang
+    given-names: Yeling
+  - family-names: Xie
+    given-names: Xiaotong
+  - family-names: Zhao
+    given-names: Wei
+  - family-names: Wei
+    given-names: Xin
+repository-code: "https://github.com/macqueen09/llm_icd_coding_data"
+license: MIT
+keywords:
+  - ICD-10-CM
+  - automated medical coding
+  - large language models
+  - MIMIC-IV
+  - retrieval-augmented generation
+  - chain-of-thought
