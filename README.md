@@ -5,7 +5,7 @@
 This repository contains the implementation for the paper: **"Accurate and Explainable ICD-10-CM Coding Through Multi-Stage Model Adaptation and Evidence-Guided Verification"**. The project focuses on fine-tuning Qwen2.5 models for ICD-10-CM coding tasks using supervised fine-tuning (SFT) and Chain-of-Thought (CoT) reasoning, with medical domain-specific data.
 
 ## Archival DOI
-PeerJ requires a DOI for author-created code repositories. This repository includes `.zenodo.json` and `CITATION.cff` metadata for Zenodo archiving. After creating a GitHub release and minting the Zenodo DOI, cite the Zenodo DOI in the PeerJ submission system and add it to this section.
+PeerJ requires a DOI for author-created code repositories. The archived software release is available through Zenodo at DOI: [10.5281/zenodo.20272769](https://doi.org/10.5281/zenodo.20272769).
 
 
 ##  Dataset Information

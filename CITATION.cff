@@ -20,6 +20,7 @@ authors:
   - family-names: Wei
     given-names: Xin
 repository-code: "https://github.com/macqueen09/llm_icd_coding_data"
+doi: "10.5281/zenodo.20272769"
 license: MIT
 keywords:
   - ICD-10-CM
